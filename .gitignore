@@ -1,0 +1,13 @@
+/*
+!.gitignore
+
+!/themes/
+themes/*
+!themes/tactilapp-posada-theme
+
+!/plugins/
+plugins/*
+!plugins/tactilapp-posada-plugin
+ 
+.DS_Store
+*.swp
