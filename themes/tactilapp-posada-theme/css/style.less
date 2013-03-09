@@ -158,12 +158,6 @@ h6 {
 .content {
   margin: 20px 40px 40px 40px;
 }
-.carousel-control {
-  background: none;
-  border: none;
-  font-size: 24px;
-  font-size: 2.4rem;
-}
 #headerbg {
   height: 100px;
   width: 100%;
@@ -176,10 +170,15 @@ h6 {
 
 
 
-#map_canvas {
-  height: 260px;
-  margin-bottom: 20px;
-}
+
+
+
+
+
+
+
+
+
 #home {
 	padding-top: 120px;
 	padding-bottom: 20px;
@@ -192,6 +191,47 @@ h6 {
 		top: 0;
 		position: absolute;
 		z-index: -1;
+
+		@media (max-width: 767px) {height: 740px;}
+		@media (max-width: 480px) {height: 740px;}
+		
+
+	}
+
+	#featurebox {
+		border: solid 1px #ebebeb;
+		background: #ffffff;
+		
+		.fbox {
+			margin: 40px;
+			position: relative;
+			text-align: center;
+			
+			.ficon {
+				margin: 0 auto;
+				background-color: @green;
+				border-radius: 100%;
+				width: 80px;
+				height: 80px;
+				border: 10px double #fff;
+				
+				i {
+					color: #fff;
+					font-size: 40px;
+					font-size: 4rem;
+					line-height: 80px;
+				}	
+			}
+		}
+		
+		h3{
+			@media (min-width: 768px) and (max-width: 979px) {
+			    font-size: 18px;
+			    font-size: 1.8rem;
+			    line-height: normal;
+			    height: 50px;			
+			}	
+		}
 	}
 	
 	#myCarousel {
@@ -199,66 +239,97 @@ h6 {
 		margin-bottom: 40px;
 		height: 356px;
 		
+		@media (min-width: 768px) and (max-width: 979px) {height: 266px;}
+	    @media (max-width: 767px) {height: 540px;}
+	    @media (max-width: 480px) { height: 540px; }
+
+		
 		.content-left {
 			margin: 60px 0 0 120px;
 			color: #fff;
-		}
-		.content-left h2 {
-			color: @green;
-			padding: 10px;
-			font-size: 29px;
-			font-size: 2.9rem;
-		}
+
+			@media (min-width: 768px) and (max-width: 979px) {margin: 20px 0 0 40px;}
+		    @media (max-width: 767px) {margin: 0 40px 0 40px;}
+		    @media (max-width: 480px) {margin: 0 40px 0 40px;}
+		    
+			h2 {
+				color: @green;
+				padding: 10px;
+				font-size: 29px;
+				font-size: 2.9rem;
+
+				@media (min-width: 768px) and (max-width: 979px) {
+					font-size: 24px;
+					font-size: 2.4rem;
+				}
+	
+				@media (max-width: 767px) {
+					font-size: 24px;
+					font-size: 2.4rem;
+				}
+
+				@media (max-width: 480px) {
+					font-size: 24px;
+					font-size: 2.4rem;
+				}
+
+			}
 		
-		.content-left p {
-			line-height: 16px;
-			padding: 10px;
+			p {
+				line-height: 16px;
+				padding: 10px;
+			}
 		}
 		
 		.content-right {
 			margin: 60px 120px 0 0;
 			color: #fff;
-		}
-		.content-right h2 {
-			color: @dark_gray;
-			padding: 10px;
-			font-size: 29px;
-			font-size: 2.9rem;
-		}
-
-		.content-right p {
-			line-height: 16px;
-			padding: 10px;
-		}
-
-	}
-}
-#home #featurebox {
-	border: solid 1px #ebebeb;
-	background: #ffffff;
-	
-	.fbox {
-		margin: 40px;
-		position: relative;
-		text-align: center;
 		
-		.ficon {
-			margin: 0 auto;
-			background-color: @green;
-			border-radius: 100%;
-			width: 80px;
-			height: 80px;
-			border: 10px double #fff;
+			@media (min-width: 768px) and (max-width: 979px) {margin: 20px 40px 0 0;}
+			@media (max-width: 767px) { margin: 0 40px 0 40px; }
+		    @media (max-width: 480px) {margin: 0 40px 0 40px;}
 			
-			i {
-				color: #fff;
-				font-size: 40px;
-				font-size: 4rem;
-				line-height: 80px;
-			}	
+			h2 {
+				color: @dark_gray;
+				padding: 10px;
+				font-size: 29px;
+				font-size: 2.9rem;
+				
+				@media (min-width: 768px) and (max-width: 979px) {
+					font-size: 24px;
+					font-size: 2.4rem;
+				}
+  
+				@media (max-width: 767px) {
+					font-size: 24px;
+					font-size: 2.4rem;
+				}
+
+			    @media (max-width: 480px) {
+					font-size: 24px;
+					font-size: 2.4rem;
+				}
+
+			}
+
+			p {
+				line-height: 16px;
+				padding: 10px;
+			}
 		}
+
 	}
+	
+
 }
+
+.carousel-control {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
 
 #about {
 	padding-top: 20px;
@@ -383,14 +454,7 @@ h6 {
 #portfolio .da-slideLeft {
   left: 0px;
 }
-#contact {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-#contact .container {
-  border: solid 1px #ebebeb;
-  background: #ffffff;
-}
+
 #footer {
   background: #333;
   padding-top: 20px;
@@ -409,29 +473,7 @@ h6 {
   .navbar .btn-group {
     margin-top: 36px;
   }
-  #home #myCarousel {
-    height: 266px;
-  }
-  #home #myCarousel .content-left {
-    margin: 20px 0 0 40px;
-  }
-  #home #myCarousel .content-left h2 {
-    font-size: 24px;
-    font-size: 2.4rem;
-  }
-  #home #myCarousel .content-right {
-    margin: 20px 40px 0 0;
-  }
-  #home #myCarousel .content-right h2 {
-    font-size: 24px;
-    font-size: 2.4rem;
-  }
-  #home #featurebox h3 {
-    font-size: 18px;
-    font-size: 1.8rem;
-    line-height: normal;
-    height: 50px;
-  }
+  
 }
 
 @media (max-width: 767px) {
@@ -450,26 +492,6 @@ h6 {
   .navbar .btn-group {
     margin-top: 36px;
   }
-  #home #background {
-    height: 740px;
-  }
-  #home #myCarousel {
-    height: 540px;
-  }
-  #home #myCarousel .content-left {
-    margin: 0 40px 0 40px;
-  }
-  #home #myCarousel .content-left h2 {
-    font-size: 24px;
-    font-size: 2.4rem;
-  }
-  #home #myCarousel .content-right {
-    margin: 0 40px 0 40px;
-  }
-  #home #myCarousel .content-right h2 {
-    font-size: 24px;
-    font-size: 2.4rem;
-  }
 }
 @media (max-width: 480px) {
   .nav-collapse .nav > li > a {
@@ -487,26 +509,22 @@ h6 {
   .navbar .btn-group {
     margin-top: 36px;
   }
-  #home #background {
-    height: 740px;
-  }
-  #home #myCarousel {
-    height: 540px;
-  }
-  #home #myCarousel .content-left {
-    margin: 0 40px 0 40px;
-  }
-  #home #myCarousel .content-left h2 {
-    font-size: 24px;
-    font-size: 2.4rem;
-  }
-  #home #myCarousel .content-right {
-    margin: 0 40px 0 40px;
-  }
-  #home #myCarousel .content-right h2 {
-    font-size: 24px;
-    font-size: 2.4rem;
-  }
+}
+
+
+#contact {
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	.container {
+		border: solid 1px #ebebeb;
+		background: #ffffff;
+	} 
+}
+
+#map_canvas {
+  height: 260px;
+  margin-bottom: 20px;
 }
 
 
@@ -536,7 +554,9 @@ body {
 /* NUEVO */
 
 .navbar-inner .brand{
-	@media (max-width: 480px) {
-		line-height: normal;
-	}
+	margin-left: 0;
+	@media (max-width: 1199px) {width: 300px; line-height: normal; text-align: center}
+	@media (min-width: 768px) and (max-width: 979px) {width: inherit; line-height: 100px}
 }
+
+

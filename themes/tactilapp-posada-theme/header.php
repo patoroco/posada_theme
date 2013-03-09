@@ -46,11 +46,14 @@
 		<div class="navbar">
 			<div class="navbar-inner">
 				<div>
+					<h1 class="brand">Posada Fuentes Carrionas</h1>
+					
 					<a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-						<span class="icon-bar"></span><span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-					<h1 class="brand">Posada Fuentes Carrionas</h1>
+
 					<div class="nav-collapse collapse navbar-responsive-collapse">
 						<ul id="nav" class="nav">
 							<li><a href="#inicio" class="active">inicio</a></li>
