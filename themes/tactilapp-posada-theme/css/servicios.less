@@ -1,0 +1,59 @@
+#servicios {
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	.container {
+		border: solid 1px #ebebeb;
+		background: #ffffff;
+	}
+	
+	.impar{
+		h2{
+			margin: 5px 40px;
+			@media (max-width: 979px){text-align: center}
+		}
+		
+		img{
+			float:left;
+			margin: 0px 40px 40px 40px;
+			width:40.42553191489362%;*width:40.37234042553192%; // span5 de bootstrap.css
+			@media (max-width: 979px){width: 90%; margin: 0 5%}
+			@media (max-width: 479px){width: 100%; margin: 0}
+
+		}
+		
+		.cuerpo{
+			float:left;
+			width:48.93617021276595%;*width:48.88297872340425%; // span6 de bootstrap.css
+			@media (max-width: 979px){width: 90%; margin: 5px 5%; border-bottom: 1px solid #ebebeb;}
+			@media (max-width: 479px){width: 100%; margin: 5px 5%}
+		}
+		
+	}
+	
+	.par{
+		h2{
+			text-align: right;
+			@media (max-width: 979px){text-align: center}
+			margin: 5px 40px;
+		}
+
+		img{
+			float:right;
+			margin: 0px 40px 40px 40px;
+			width:40.42553191489362%;*width:40.37234042553192%; // span5 de bootstrap.css
+			@media (max-width: 979px){width: 90%; margin: 0 5%}
+			@media (max-width: 479px){width: 100%; margin: 0}
+
+		}
+
+		.cuerpo{
+			float:right;
+			width:48.93617021276595%;*width:48.88297872340425%; // span6 de bootstrap.css
+			@media (max-width: 979px){width: 90%; margin: 5px 5%; border-bottom: 1px solid #ebebeb;}
+			@media (max-width: 479px){width: 100%; margin: 5px 5%}
+		}
+
+	}
+	.last .cuerpo{border: 0;}
+}

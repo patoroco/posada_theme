@@ -1,8 +1,8 @@
 	<footer id="footer">
 		<div class="container">
 			<div class="row-fluid">
-				<div class="span12">
-					<p>copyright &copy; 2013 Spring - all rights reserved</p>
+				<div class="span12 text-center">
+					<p>Posada Fuentes Carrionas. Camasobres - La Pernía. Tlfno. 979 066910</p>
 				</span>
 			</div>
 		</div>

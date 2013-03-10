@@ -27,7 +27,7 @@
 				  
 				  <?php	for ($i = 0; $i < count($fotos); $i++): $foto = $fotos[$i]; ?>
 				    <div class="<?php if ($i == 0) echo 'active'?> item">
-					    <img src="<?php echo $foto?>" alt="" class="animated fadeIn" />
+					    <img src="<?php echo $foto?>" alt="" />
 				    </div>
 				  
 				  <?php endfor; ?>

@@ -63,24 +63,6 @@
 			</form>
 		</div>
 	</div>
-<!--
-	<div class="span6">
-		<div class="content">
-			<div id="map_canvas"></div>
-			<address>
-				<strong>Spring</strong>
-				<br />
-				111 Some Street, Suite 100
-				<br />
-				San Francisco, CA 94107
-				<br /><br />
-				Phone: (123) 456-7890
-				<br />
-				Fax: (123) 456-7890
-			</address>
-		</div>
-	</div>
--->
 </div>
 </div>
 </section>

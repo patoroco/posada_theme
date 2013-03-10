@@ -56,12 +56,17 @@
 
 					<div class="nav-collapse collapse navbar-responsive-collapse">
 						<ul id="nav" class="nav">
-							<li><a href="#contacto">contacto</a></li>
 							<li><a href="#inicio">inicio</a></li>
+							
 							<li><a href="#localizacion">localización</a></li>
 							<li><a href="#servicios">servicios</a></li>
+							
+<!--
 							<li><a href="#actividades">actividades</a></li>
 							<li><a href="#tarifas">tarifas</a></li>
+-->
+							
+							<li><a href="#contacto">contacto</a></li>
 						</ul>
 					</div>		
 				</div>
