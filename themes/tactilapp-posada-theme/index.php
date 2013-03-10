@@ -4,7 +4,13 @@
 
 <?php
 	include('sections/home.php');
+	include('sections/about.php');
+	include('sections/contact.php');
+	include('sections/features.php');
+	include('sections/portfolio.php');
+	include('sections/services.php');
 ?>
+
 <!--
 	<section id="contact" data-type="page" data-name="inicio">
 		<div class="container">
@@ -58,13 +64,7 @@
 		</div>
 	</section>	
 -->
-<?php	
-	include('sections/about.php');
-	include('sections/contact.php');
-	include('sections/features.php');
-	include('sections/portfolio.php');
-	include('sections/services.php');
-?>
+
 	
 <?php
 	get_footer();

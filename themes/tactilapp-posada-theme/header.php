@@ -21,7 +21,7 @@
 	<script type="text/javascript">
 		// Esto se eliminará en la versión final, ya que el CSS irá compilado con LESSCompiler
 	
-	    less = {
+	    less = { 
 	        env: "development", // or "production"
 	        async: true,       // load imports async
 	        fileAsync: false,   // load imports async when in a page under

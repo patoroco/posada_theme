@@ -1,3 +1,14 @@
+<?php
+	function get_foto_paths($relative_paths){
+		$result = array();
+		foreach ($relative_paths as $relative)
+			$result[] = get_stylesheet_directory_uri().'/img/'.$relative;
+		return $result;
+	}
+	
+	$fotos = array('posada_lejos.jpg', 'posada_ventana_bano.jpg', 'posada_fachada.jpg', 'posada_juegos.jpg');
+	$fotos = get_foto_paths($fotos);
+?>
 	<section id="home" data-type="page" data-name="inicio">
 		<div id="background"></div>
 		<div class="container">
@@ -5,21 +16,22 @@
 			<div class="span12">
 				<div id="myCarousel" class="carousel slide">
 				  <ol class="carousel-indicators">
-				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				    <li data-target="#myCarousel" data-slide-to="1"></li>
-				    <li data-target="#myCarousel" data-slide-to="2"></li>
+  				  
+  				  <?php	for ($i = 0; $i < count($fotos); $i++): $foto = $fotos[$i]; ?>
+				    <li data-target="#myCarousel" data-slide-to="<?php echo $i?>" <?php if ($i == 0) echo 'class="active"'?>></li>
+				  <?php endfor?>
+				  
 				  </ol>
 				  <!-- Carousel items -->
 				  <div class="carousel-inner">
-				    <div class="active item">
-					    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/carousel1.jpg" alt="" />
+				  
+				  <?php	for ($i = 0; $i < count($fotos); $i++): $foto = $fotos[$i]; ?>
+				    <div class="<?php if ($i == 0) echo 'active'?> item">
+					    <img src="<?php echo $foto?>" alt="" class="animated fadeIn" />
 				    </div>
-				    <div class="item">
-					    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/carousel2.jpg" alt="" />
-				    </div>
-				    <div class="item">
-					    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/carousel3.jpg" alt="" />
-				    </div>
+				  
+				  <?php endfor; ?>
+				  
 				  </div>
 				  <!-- Carousel nav -->
 				  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
