@@ -1,6 +1,5 @@
 $(function() {
-
-	var latlng = new google.maps.LatLng(57.0442, 9.9116);
+	var latlng = new google.maps.LatLng(43.01460, -4.487364);
 	var settings = {
 		zoom: 15,
 		scrollwheel: false,
@@ -12,7 +11,7 @@ $(function() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP};
 	var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
 	var contentString = '<div style="color: black">'+
-		'<h4>Spring</h4>'+
+		'<h4>Posada Fuentes Carrionas</h4>'+
 		'</div>';
 	var infowindow = new google.maps.InfoWindow({
 		content: contentString
@@ -29,7 +28,7 @@ $(function() {
 		new google.maps.Point(0,0),
 		new google.maps.Point(50, 50));
 
-	var companyPos = new google.maps.LatLng(57.0442, 9.9116);
+	var companyPos = new google.maps.LatLng(43.01460, -4.487364);
 
 	var companyMarker = new google.maps.Marker({
 		position: companyPos,

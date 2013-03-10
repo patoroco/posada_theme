@@ -235,12 +235,6 @@ h6 {
 	} 
 }
 
-#map_canvas {
-  height: 260px;
-  margin-bottom: 20px;
-}
-
-
 body {
 	background: #F3F5F0;
 	color: @dark_gray;
@@ -261,6 +255,31 @@ body {
 	@media (max-width: 480px) {
 		padding-right: 0;
 		padding-left: 0;
+	}
+}
+
+
+/* CONTACTO */
+
+#contact .bloque_der{
+	@media (min-width: 768px){
+		text-align: right;
+		dt{	margin-right: 10px; }
+	}
+}
+
+#localizacion {
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	.container {
+		border: solid 1px #ebebeb;
+		background: #ffffff;
+	}
+
+	#map_canvas {
+		height: 300px;
+		margin-bottom: 20px;
 	}
 }
 
