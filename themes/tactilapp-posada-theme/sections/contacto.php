@@ -13,19 +13,19 @@
 			<div class="span6">
 				<dl>
 					<dt>Posada</dt>
-						<dd>979066910 / 610763040</dd>
+						<dd><a href="tel:979066910">979066910</a> / <a href="tel:610763040">610763040</a></dd>
 					<dt>Central de Reservas</dt>
-						<dd>942709871</dd>
+						<dd><a href="tel:942709871">942709871</a></dd>
 				</dl>
 			</div>
 			
 			<div class="span6 bloque_der">
 				<dl>
 					<dt>Oficina</dt>
-					<dd>979123746 / 979126073</dd>
+					<dd><a href="tel:979123746">979123746</a> / <a href="tel:979126073">979126073</a></dd>
 					
 					<dt>Fax</dt>
-					<dd>979126073</dd>
+					<dd><a href="tel:979126073">979126073</a></dd>
 				</dl>
 			</div>
 		</div><!-- row -->

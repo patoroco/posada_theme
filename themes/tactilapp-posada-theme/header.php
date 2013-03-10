@@ -8,15 +8,15 @@
 	<meta name="author" content="TactilApp.com" >
 	<meta charset="utf-8">
 		
-	<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">	
-	<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/font-awesome.css" rel="stylesheet">
-	<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/animate.css" rel="stylesheet">
+	<link href="<?php echo print_theme('/css/bootstrap.min.css'); ?>" rel="stylesheet" media="screen">
+	<link href="<?php echo print_theme('/css/bootstrap-responsive.min.css'); ?>" rel="stylesheet" media="screen">	
+	<link href="<?php echo print_theme('/css/animate.css'); ?>" rel="stylesheet">
 	
-	<?php echo '<!--[if IE 7]><link href="'.get_stylesheet_directory_uri().'/css/font-awesome-ie7.css" rel="stylesheet"><![endif]-->';?>
+	<?php // echo '<!--[if IE 7]><link href="'.get_stylesheet_directory_uri().'/css/font-awesome-ie7.css" rel="stylesheet"><![endif]-->';?>
+	
 	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-	<link rel="stylesheet/less" href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.less" />
+	<link rel="stylesheet/less" href="<?php echo print_theme('/css/style.less'); ?>" />
 
 	<script type="text/javascript">
 		// Esto se eliminará en la versión final, ya que el CSS irá compilado con LESSCompiler
@@ -36,7 +36,7 @@
 	                            //resource
 	    };
 	</script>
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/less.js" type="text/javascript"></script>
+	<script src="<?php echo print_theme('/js/less.js'); ?>" type="text/javascript"></script>
 </head>
 
 <body>
@@ -46,7 +46,7 @@
 		<div class="navbar">
 			<div class="navbar-inner">
 				<div>
-<!-- 					<h1 class="brand">Posada Fuentes Carrionas</h1> -->
+					<h1 class="brand">Posada Fuentes Carrionas</h1>
 					
 					<a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 						<span class="icon-bar"></span>
@@ -57,15 +57,9 @@
 					<div class="nav-collapse collapse navbar-responsive-collapse">
 						<ul id="nav" class="nav">
 							<li><a href="#inicio">inicio</a></li>
-							
 							<li><a href="#localizacion">localización</a></li>
 							<li><a href="#servicios">servicios</a></li>
-							
-<!--
-							<li><a href="#actividades">actividades</a></li>
-							<li><a href="#tarifas">tarifas</a></li>
--->
-							
+							<li><a href="#tarifas">tarifas</a></li>														
 							<li><a href="#contacto">contacto</a></li>
 						</ul>
 					</div>		

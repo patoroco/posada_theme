@@ -10,13 +10,7 @@
 	include('sections/home.php');
 	include('sections/localizacion.php');
 	include('sections/servicios.php');
-	
-/*
-	include('sections/features.php');
-	include('sections/portfolio.php');
-	include('sections/services.php');
-*/
-	
+	include('sections/tarifas.php');	
 	include('sections/contacto.php');
 ?>	
 <?php

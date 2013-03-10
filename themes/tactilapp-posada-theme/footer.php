@@ -15,9 +15,12 @@
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.min.js"></script>
 
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/googlemaps.js"></script>
+	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.hoverdir.js"></script>
+	<script src="http://www.ruralgest.net/scr/modulos/recursos_ext/js_ext/ext_v001.php?id_casa=576746&espacio=2&id_idioma=0"></script>
+
+
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/onepage.js"></script>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/posada.js"></script>
-	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.hoverdir.js"></script>
 
 	<script type="text/javascript">
 
